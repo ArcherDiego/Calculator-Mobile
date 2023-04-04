@@ -1,13 +1,16 @@
 import React from "react"
-import { View } from "react-native"
 
-import Card from "../../components/Card"
+import { Home } from "./style"
+
+import Screen from "../../components/Screen/Screen"
+import { StatusBar } from "expo-status-bar"
 
 const Calculator = () => {
     return (
-        <View>
-            <Card></Card>
-        </View>
+        <Home>
+            <StatusBar style="dark" />
+            <Screen />
+        </Home>
     )
 }
 
