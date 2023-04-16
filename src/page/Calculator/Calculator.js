@@ -1,15 +1,17 @@
 import React from "react"
 
-import { Home } from "./style"
+import Display from "../../components/Display/Display"
 
-import Screen from "../../components/Screen/Screen"
-import { StatusBar } from "expo-status-bar"
+import { Home, Logo, Header, Title } from "./style"
 
-const Calculator = () => {
+const Calculator = ({onLayout}) => {
     return (
-        <Home>
-            <StatusBar style="dark" />
-            <Screen />
+        <Home onLayout={ onLayout }>
+            <Header>
+                <Title>HP 10s+ Scientific Calculator</Title>
+                <Logo source={require('../../assets/images/hpLogo.png')} />
+            </Header>
+            <Display />
         </Home>
     )
 }
