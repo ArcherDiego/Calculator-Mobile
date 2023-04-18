@@ -1,13 +1,11 @@
 import React from "react"
 
-import { Text } from "react-native"
-
-import { BtnStyle } from "./style"
+import { BtnStyle, BtnTextStyle } from "./style"
 
 const Button = ({ children }) => {
     return(
         <BtnStyle>
-            <Text>{ children }</Text>
+            <BtnTextStyle>{ children }</BtnTextStyle>
         </BtnStyle>
     )
 }

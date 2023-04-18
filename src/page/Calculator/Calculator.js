@@ -1,6 +1,7 @@
 import React from "react"
 
 import Display from "../../components/Display/Display"
+import BasicButtons from "../../components/BasicButtons/BasicButtons"
 
 import { Home, Logo, Header, Title } from "./style"
 
@@ -12,6 +13,7 @@ const Calculator = ({onLayout}) => {
                 <Logo source={require('../../assets/images/hpLogo.png')} />
             </Header>
             <Display />
+            <BasicButtons />
         </Home>
     )
 }
