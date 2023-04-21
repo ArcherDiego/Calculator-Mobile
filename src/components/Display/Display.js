@@ -2,11 +2,11 @@ import React from "react"
 
 import { CountLine, LcdDisplay, ResultLine } from "./style"
 
-const Display = () => {
+const Display = ({display, result}) => {
     return( 
         <LcdDisplay>
-            <CountLine>8.3/1600</CountLine>
-            <ResultLine>0.0051875</ResultLine>
+            <CountLine>{ display }</CountLine>
+            <ResultLine>{ result }</ResultLine>
         </LcdDisplay>
     )
 }
